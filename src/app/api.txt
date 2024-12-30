@@ -1,0 +1,5 @@
+pDnay6-WMJcw4oT0OGnZvlhG4XORQbka7ThOKiDt
+
+curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+     -H "Authorization: Bearer pDnay6-WMJcw4oT0OGnZvlhG4XORQbka7ThOKiDt" \
+     -H "Content-Type:application/json"

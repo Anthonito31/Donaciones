@@ -1,0 +1,25 @@
+<div class="w-full min-h-dvh m-0 p-0">
+  <header class="m-0 p-0 w-full fixed top-0 left-0 right-0 z-1000">
+    <app-header />
+  </header>
+
+  <div class="grid grid-rows-[1fr_auto] h-screen">
+    <main class=" ml-3 mr-3">
+      <!-- Contenido principal -->
+      <div class="mt-12 p-0 flex flex-col justify-center w-full min-h-24">
+
+        <h2 class="text-xl text-center">Publicaciones</h2>
+      
+        @for (post of posts; track post.id) {
+          <app-post [post]="post"/>
+        }
+      
+      </div>      
+    </main>
+
+    <footer class="bg-gray-400 p-4">
+      <!-- Pie de página -->
+      <app-footer />
+    </footer>
+  </div>
+</div>

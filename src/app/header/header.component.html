@@ -1,0 +1,25 @@
+<div class="m-0 p-0 w-full">
+  <nav class="m-0 p-2 w-full bg-red-600 flex flex-col justify-center text-white">
+    <div class="flex justify-between">
+      <h1 class="ml-5 text-center text-2xl">Dona con Amor</h1>
+      <div class="flex justify-end">
+        <button (click)="menuOpen = !menuOpen">
+          @if(menuOpen){
+            <img src="close.svg" alt="Close" class="w-7 h-7">
+          }@else {
+            <img src="menu.svg" alt="Abrir" class="w-7 h-7">
+          }
+        </button>
+      </div>
+    </div>
+
+    @if(menuOpen){
+      <ul class="m-0 p-0 flex flex-col justify-center">
+        <li class="ml-3 p-1 hover:bg-red-500 rounded-lg"><a>Inicio</a></li>
+        <li class="ml-3 p-1 hover:bg-red-500 rounded-lg"><a>Como Ayudar</a></li>
+        <li class="ml-3 p-1 hover:bg-red-500 rounded-lg"><a>Sobre Nosotros</a></li>
+      </ul>
+    }
+  </nav>
+</div>
+
